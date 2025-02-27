@@ -27,15 +27,16 @@ Implementation Steps:
 - Return the result list after checking all elements.
 """
 
-#def lessThan4(aList):
+#problem 1
+def lessThan4(aList):
     '''
     aList: a list of strings
     '''
-    # Initialize an empty list to store the result
+    result = []  # Initialize an empty list to store the result
     
     # Iterate through each string in aList
+    for string in aList:
+        if len(string) < 4:  # Check if the string has fewer than 4 characters
+            result.append(string)  # Add it to the result list
     
-     # Check if the string has fewer than 4 characters
-        # Add it to the result list
-    
-    # Return the list of strings with fewer than 4 characters
+    return result  # Return the list of strings with fewer than 4 characters
