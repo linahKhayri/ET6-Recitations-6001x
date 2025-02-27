@@ -2,7 +2,7 @@
 Write a function called score that meets the specifications below.
 
 def score(word, f):
-    """
+    
        word, a string of length > 1 of alphabetical 
              characters (upper and lowercase)
        f, a function that takes in two int arguments and returns an int
