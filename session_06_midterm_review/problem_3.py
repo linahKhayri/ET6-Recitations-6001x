@@ -112,3 +112,71 @@ def score(word, f):
     scoreList.sort(reverse=True)                #the 1st 2 elements of list have highest score
     return f(scoreList[0],scoreList[1])
     """
+# Hasan Zemzem' Group 
+def f(h1, h2):
+    """
+    A function to return the sum of two numbers
+    """
+    return h1 + h2
+
+def score(word, f):
+    
+    # Define a dictionary to map letters to their position in the alphabet
+    alphabet_position = {
+    'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6, 'g': 7, 'h': 8, 'i': 9, 'j': 10, 
+    'k': 11, 'l': 12, 'm': 13, 'n': 14, 'o': 15, 'p': 16, 'q': 17, 'r': 18, 's': 19, 
+    't': 20, 'u': 21, 'v': 22, 'w': 23, 'x': 24, 'y': 25, 'z': 26
+    }
+    
+    word_lower = word.lower()
+    scores = []
+    for i in range(len(word_lower)):
+        scores.append(i * alphabet_position[word_lower[i]])
+    scores.sort()
+    
+    return f(scores[-1], scores[-2])
+
+# Example usage:
+print(score('Somaia', f))
+
+
+# Solara Hamza' Group
+def score(word, f):
+    alpha={}
+    position=1
+    for char in "abcdefghijklmnopqrstuvwxyz":
+        alpha[char]=position
+        position+=1
+    letter_scores=[]
+    for index in range(len(word)):
+        letter_lower=word[index].lower()
+        letter_position=alpha[letter_lower]
+        score_value= letter_position * index
+        letter_scores.append(score_value)
+    letter_scores.sort(reverse=True)
+    return (f(letter_scores[0],letter_scores[1]))
+def f(x,y):
+        return x+y
+
+# Said Ibrahim's Group 
+def score(word, f):
+    # List to store all scores
+    scores = []
+    # Calculate score for each letter
+    for i in range(len(word)):
+        # Get alphabet position (1-26)
+        char = word[i].lower()
+        alpha_pos = ord(char) - ord('a') + 1
+        # Multiply by distance from start
+        letter_score = alpha_pos * i
+        scores.append(letter_score)
+    
+    # Sort scores in descending order
+    scores.sort(reverse=True)
+    
+    # Return f applied to two highest scores
+    return f(scores[0], scores[1])
+
+
+def add(a, b):
+    return a + b
