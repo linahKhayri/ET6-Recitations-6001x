@@ -24,3 +24,20 @@ def divide_numbers():
     print("Result:", result)
 
 divide_numbers()
+
+#Robust Version
+def divide_numbers():
+    while True:
+        try:
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
+            result = num1 / num2
+        except ValueError:
+            print("Invalid input! Please enter numeric values.")
+        except ZeroDivisionError:
+            print("Cannot divide by zero! Please enter a non-zero denominator.")
+        else:
+            print("Result:", result)
+            break
+
+divide_numbers()
