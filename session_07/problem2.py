@@ -13,9 +13,10 @@ Your task:
 3. Ensure that invalid inputs (non-numeric values) are also **properly handled**.
 """
 
+import builtins
 def calculate_average(grades):
     """Returns the average of a list of grades."""
-    return sum(grades) / len(grades)
+    return builtins.sum(grades) / len(grades)
 
 # Test Cases
 print(calculate_average([80, 90, 100]))  # Expected: 90.0
