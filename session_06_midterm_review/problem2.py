@@ -44,12 +44,12 @@ If a = 20 and b = 12:
 - When `b` becomes 0, we return `a`, which is 4. Thus, the GCD of 20 and 12 is 4.
 """
 
-#def gcd(a, b):
+def gcd(a, b):
     """
     a, b: two positive integers
     Returns the greatest common divisor of a and b
     """
-  
-  # Base case: GCD of a and 0 is a
-  
-  # Recursive step: GCD of a and b 
+    if b == 0:
+        return a
+    else:
+        return gcd(b, a % b)  # Recursive call
