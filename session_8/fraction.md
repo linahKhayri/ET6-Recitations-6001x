@@ -138,11 +138,11 @@ print(f2.convert())  # Output: 0.8333333333333334
 ---
 
 ## **Conclusion**
- **Python’s special methods (`__add__`, `__sub__`, `__str__`) enable operator overloading.**  
- **`self` refers to the current object, while `other` is the second operand in operations like `+` and `-`.**  
- **Fraction addition & subtraction require denominator alignment using cross multiplication.**  
- **The class converts fractions to decimal format using `convert()`.**  
+ ✔ **Python’s special methods (`__add__`, `__sub__`, `__str__`) enable operator overloading.**  
+ ✔ **`self` refers to the current object, while `other` is the second operand in operations like `+` and `-`.**  
+✔ **Fraction addition & subtraction require denominator alignment using cross multiplication.**  
+✔ **The class converts fractions to decimal format using `convert()`.**  
 
----
+
 
 
