@@ -21,13 +21,13 @@ class fraction(object):
         return self.denom
     
     def __add__(self, other):
-        numerNew = other.getDenom() * self.getNumer() \
+        numerNew = other.getDenom() * self.getNumer() 
                    + other.getNumer() * self.getDenom()
         denomNew = other.getDenom() * self.getDenom()
         return fraction(numerNew, denomNew)
     
     def __sub__(self, other):
-        numerNew = other.getDenom() * self.getNumer() \
+        numerNew = other.getDenom() * self.getNumer() 
                    - other.getNumer() * self.getDenom()
         denomNew = other.getDenom() * self.getDenom()
         return fraction(numerNew, denomNew)
@@ -44,7 +44,7 @@ Python provides **special methods** (also called **dunder methods**, short for *
 ### **🔹 `__add__` Method (`+` Operator Overloading)**
 ```python
 def __add__(self, other):
-    numerNew = other.getDenom() * self.getNumer() \
+    numerNew = other.getDenom() * self.getNumer() 
                + other.getNumer() * self.getDenom()
     denomNew = other.getDenom() * self.getDenom()
     return fraction(numerNew, denomNew)
@@ -65,7 +65,7 @@ def __add__(self, other):
 ### **🔹 `__sub__` Method (`-` Operator Overloading)**
 ```python
 def __sub__(self, other):
-    numerNew = other.getDenom() * self.getNumer() \
+    numerNew = other.getDenom() * self.getNumer() 
                - other.getNumer() * self.getDenom()
     denomNew = other.getDenom() * self.getDenom()
     return fraction(numerNew, denomNew)
