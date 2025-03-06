@@ -44,7 +44,7 @@ class intSet(object):
 
 ---
 
-## **🚀 Key Takeaways**
+## **Key Takeaways**
 ✔ **`intSet` mimics a mathematical set** but uses a Python list to store unique integers.  
 ✔ **Duplicate values are prevented** by checking before inserting.  
 ✔ `member()` **checks if an element exists in the set**.  
@@ -54,15 +54,19 @@ class intSet(object):
 ---
 
 ## **🔹 Two Important Tips**
-### **1️⃣ `__str__` Method for Readable Output**
-- The `__str__` method **formats an object as a human-readable string**.
-- Helps when using `print(object)` instead of displaying memory addresses.
+### **1️⃣ Why Does `print(s)` Show `{}` When `s` is Not a Real Set?**
+- The output of `print(s)` **looks like a set `{}`** because of the way `__str__()` is implemented.
+- `__str__()` **formats the list of values inside curly braces** to resemble a Python set.
+- However, `intSet` is actually **a list-based implementation, not a true set**.
 - Example:
   ```python
-  def __str__(self):
-      self.vals.sort()
-      return '{' + ','.join(map(str, self.vals)) + '}'
+  s = intSet()
+  print(s)  # Output: {}
+  s.insert(3)
+  s.insert(5)
+  print(s)  # Output: {3,5}
   ```
+  - The curly braces **come from `__str__()`**, not because `s` is an actual set.
 
 ### **2️⃣ Using `try-except` for Error Handling**
 - **`try-except` prevents program crashes** when handling exceptions.
@@ -75,5 +79,6 @@ class intSet(object):
           raise ValueError(str(e) + ' not found')
   ```
 - Instead of stopping execution, it **raises a controlled error message**.
+
 
 
