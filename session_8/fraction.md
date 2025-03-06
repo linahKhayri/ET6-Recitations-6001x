@@ -1,4 +1,4 @@
-## 📌 Understanding the `fraction` Class: Special Methods, `self` & `other`, and Math Concepts
+##  Understanding the `fraction` Class: Special Methods, `self` & `other`, and Math Concepts
 
 The `fraction` class demonstrates **object-oriented programming (OOP)** principles, implementing mathematical operations using **special methods (dunder methods)**. Let’s analyze it step by step.
 
@@ -21,13 +21,13 @@ class fraction(object):
         return self.denom
     
     def __add__(self, other):
-        numerNew = other.getDenom() * self.getNumer() 
+        numerNew = other.getDenom() * self.getNumer() \
                    + other.getNumer() * self.getDenom()
         denomNew = other.getDenom() * self.getDenom()
         return fraction(numerNew, denomNew)
     
     def __sub__(self, other):
-        numerNew = other.getDenom() * self.getNumer() 
+        numerNew = other.getDenom() * self.getNumer() \
                    - other.getNumer() * self.getDenom()
         denomNew = other.getDenom() * self.getDenom()
         return fraction(numerNew, denomNew)
@@ -44,7 +44,7 @@ Python provides **special methods** (also called **dunder methods**, short for *
 ### **🔹 `__add__` Method (`+` Operator Overloading)**
 ```python
 def __add__(self, other):
-    numerNew = other.getDenom() * self.getNumer() 
+    numerNew = other.getDenom() * self.getNumer() \
                + other.getNumer() * self.getDenom()
     denomNew = other.getDenom() * self.getDenom()
     return fraction(numerNew, denomNew)
@@ -56,16 +56,16 @@ def __add__(self, other):
   ```
 - The function **computes a new fraction**, using the formula for fraction addition:
 
-  \[
+  $$
   \frac{a}{b} + \frac{c}{d} = \frac{a \times d + c \times b}{b \times d}
-  \]
+  $$
 
 ---
 
 ### **🔹 `__sub__` Method (`-` Operator Overloading)**
 ```python
 def __sub__(self, other):
-    numerNew = other.getDenom() * self.getNumer() 
+    numerNew = other.getDenom() * self.getNumer() \
                - other.getNumer() * self.getDenom()
     denomNew = other.getDenom() * self.getDenom()
     return fraction(numerNew, denomNew)
@@ -77,9 +77,9 @@ def __sub__(self, other):
   ```
 - Computes fraction subtraction using:
 
-  \[
+  $$
   \frac{a}{b} - \frac{c}{d} = \frac{a \times d - c \times b}{b \times d}
-  \]
+  $$
 
 ---
 
@@ -100,14 +100,14 @@ def __sub__(self, other):
 The class models **basic fraction arithmetic**, specifically **addition, subtraction, and conversion to decimal**.
 
 ### **🔹 Fraction Addition Formula**
-\[
+$$
 \frac{a}{b} + \frac{c}{d} = \frac{a \times d + c \times b}{b \times d}
-\]
+$$
 
 ### **🔹 Fraction Subtraction Formula**
-\[
+$$
 \frac{a}{b} - \frac{c}{d} = \frac{a \times d - c \times b}{b \times d}
-\]
+$$
 
 ### **🔹 Fraction to Decimal Conversion**
 ```python
@@ -137,8 +137,12 @@ print(f2.convert())  # Output: 0.8333333333333334
 
 ---
 
-## ** Key Takeaways**
-✅ **Python’s special methods (`__add__`, `__sub__`, `__str__`) enable operator overloading.**  
-✅ **`self` refers to the current object, while `other` is the second operand in operations like `+` and `-`.**  
-✅ **Fraction addition & subtraction require denominator alignment using cross multiplication.**  
-✅ **The class converts fractions to decimal form
+## ** Conclusion**
+ **Python’s special methods (`__add__`, `__sub__`, `__str__`) enable operator overloading.**  
+ **`self` refers to the current object, while `other` is the second operand in operations like `+` and `-`.**  
+ **Fraction addition & subtraction require denominator alignment using cross multiplication.**  
+ **The class converts fractions to decimal format using `convert()`.**  
+
+---
+
+
