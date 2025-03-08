@@ -1,12 +1,12 @@
 ## UML Class Diagram: Method Overriding & Attribute Overriding in Python
 
-### ** Overview**
+### **Overview**
 This UML class diagram represents a multiple inheritance structure where class `D` inherits from both `C` and `B`, while `B` inherits from `A`. Understanding how Python resolves **method overriding** and **attribute overriding** in such cases is crucial.
 
-### ** Class Diagram**
-![UML Class Diagram](sandbox:/mnt/data/UML%20class.png)
+### **Class Diagram**
+![UML Class Diagram](sandbox:/mnt/data/UML%20class_corrected.png)
 
-### ** Python Code Representation**
+### **Python Code Representation**
 ```python
 class A:
     def __init__(self):
