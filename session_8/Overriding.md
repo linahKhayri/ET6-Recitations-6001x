@@ -4,7 +4,9 @@
 This UML class diagram represents a multiple inheritance structure where class `D` inherits from both `C` and `B`, while `B` inherits from `A`. Understanding how Python resolves **method overriding** and **attribute overriding** in such cases is crucial.
 
 ### **Class Diagram**
-![UML Class Diagram](sandbox:/mnt/data/UML%20class_corrected.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/MIT-Emerging-Talent/ET6-Recitations-6001x/main/session_8/UML%20class.png" width="500">
+</p>
 
 ### **Python Code Representation**
 ```python
@@ -47,13 +49,13 @@ class D(C, B):  # Multiple Inheritance
 
 # Example Execution
 obj = D()
-print(obj.a)  # Attribute Resolution
-print(obj.b)
-print(obj.c)
-print(obj.d)
-obj.x()  # Method Resolution
-obj.y()
-obj.z()
+print(obj.a)  # Output: 2 (Overwritten by B.__init__())  # Attribute Resolution
+print(obj.b)  # Output: 3 (From B.__init__())
+print(obj.c)  # Output: 5 (From C.__init__())
+print(obj.d)  # Output: 6 (From D.__init__())
+obj.x()  # Output: A.x (Found in class A via MRO)  # Method Resolution
+obj.y()  # Output: C.y (First match in MRO: D → C → B → A)
+obj.z()  # Output: D.z (Method overridden in D)
 ```
 
 ### **🔹 Important Tips**
