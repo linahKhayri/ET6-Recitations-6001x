@@ -69,6 +69,4 @@ obj.z()  # Output: D.z (Method overridden in D)
 
 5️⃣ **Use `super()` for Better Control:** Instead of `C.__init__(self)` and `B.__init__(self)`, using `super().__init__()` ensures constructors follow MRO automatically.
 
----
 
-This Markdown file provides a **concise guide** to understanding **method overriding and attribute overriding in Python** using UML representation. 🚀
