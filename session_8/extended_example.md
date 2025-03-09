@@ -1,6 +1,6 @@
 ## **Understanding Object-Oriented Programming (OOP) Through the GradeBook Example**
 
-### ** Overview**
+### **Overview**
 This example demonstrates key **Object-Oriented Programming (OOP) principles** including:
 - **Encapsulation** → Managing student data and grades within dedicated classes.
 - **Inheritance** → Reusing and extending functionality from parent classes.
@@ -131,7 +131,7 @@ def getGrades(self, student):
 
 ---
 
-## ** Key Takeaways: OOP Principles in Action**
+## **Key Takeaways: OOP Principles in Action**
 ✅ **Encapsulation** → Keeps related data and behaviors together.  
 ✅ **Inheritance** → Promotes **code reuse and specialization**.  
 ✅ **Method Overriding** → Allows **subclasses to modify behaviors**.  
