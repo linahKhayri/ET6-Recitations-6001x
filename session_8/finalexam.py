@@ -8,7 +8,7 @@
 ## DO NOT MODIFY THIS CLASS
 class Person(object):
     def __init__(self, name):
-        # Create a person with name name
+        # Create a person with name
         self.name = name
         try:
             firstBlank = name.rindex(' ')
@@ -60,7 +60,7 @@ class USResident(Person):
         pass
 
 ## TEST CASES: Uncomment and run after implementing USResident
-# resident1 = USResident("Michael Jackson", "citizen")
+# resident1 = USResident("Tim Beaver", "citizen")
 # print(resident1.getStatus())  # Expected Output: "citizen"
 
 # resident2 = USResident("Sophia Anderson", "legal_resident")
