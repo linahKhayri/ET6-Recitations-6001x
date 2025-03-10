@@ -10,7 +10,7 @@ This UML class diagram represents a multiple inheritance structure where class `
 
 ### **Python Code Representation**
 ```python
-class A:
+class A(object):
     def __init__(self):
         self.a = 1
     def x(self):
@@ -30,7 +30,7 @@ class B(A):
     def z(self):
         print("B.z")
 
-class C:
+class C(object):
     def __init__(self):
         self.a = 4
         self.c = 5
@@ -39,7 +39,7 @@ class C:
     def z(self):
         print("C.z")
 
-class D(C, B):  # Multiple Inheritance
+class D(C, B):
     def __init__(self):
         C.__init__(self)
         B.__init__(self)
