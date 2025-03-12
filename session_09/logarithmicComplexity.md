@@ -3,7 +3,7 @@
 Logarithmic complexity describes algorithms where **the number of steps grows as the logarithm of the input size**. This means that instead of processing **every** element like in \( O(n) \), an \( O(log n) \) algorithm **reduces the problem size significantly at each step**—usually by dividing it by a constant factor (such as 2).  
 
 ## **What Does "Logarithm" Mean in Complexity?**
-A **logarithm** is the inverse of exponentiation. The logarithm **\( log_b(n) \)** answers the question:  
+A **logarithm** is the inverse of exponentiation. The logarithm **$log_b(n)$** answers the question:  
 **"To what power must \( b \) be raised to get \( n \)?"**  
 
 ### **Mathematically:**
@@ -14,7 +14,7 @@ $$
 Where:
 - \( b \) is the **base** (often 2 in computer science).
 - \( n \) is the **input size**.
-- \( x \) is the **number of times you must divide \( n \) by \( b \) to reach 1**.
+- \( x \) is **the number of times n** can be divided by b before reaching **1**. This is equivalent to asking, "How many times must we multiply b to reach 𝑛?", which is the definition of $log_𝑏(𝑛)$.
 
 ### **Example: Logarithm in Base 2**
 $$
@@ -27,7 +27,29 @@ $$
 \log_2(1024) = 10 \quad \text{because} \quad 2^{10} = 1024
 $$
 
-This tells us that if an algorithm **cuts the problem size in half** each step, it will finish in about \( \log_2(n) \) steps.
+### **Understanding Logarithms Using Division**
+Another way to interpret logarithms is through repeated **division**. Instead of thinking about multiplying 2 to reach 8, think about how many times you must **divide** 8 by 2 to reach 1:
+
+1. $8 \div 2 = 4$ (1 division)
+2. $4 \div 2 = 2$ (2 divisions)
+3. $2 \div 2 = 1$ (3 divisions)
+
+Since we divided **three times**, this confirms that:
+
+$\log_2(8) = 3$
+
+
+Similarly, for 16:
+1. $16 \div 2 = 8$
+2. $8 \div 2 = 4$
+3. $4 \div 2 = 2$
+4. $2 \div 2 = 1$
+
+This confirms that:
+$\log_2(16) = 4$
+
+This tells us that if an algorithm **cuts the problem size in half** each step, it will finish in about $\log_2(n)$ steps.
+
 
 ---
 
