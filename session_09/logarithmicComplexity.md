@@ -7,9 +7,9 @@ A **logarithm** is the inverse of exponentiation. The logarithm **\( log_b(n) \)
 **"To what power must \( b \) be raised to get \( n \)?"**  
 
 ### **Mathematically:**
-\[
+$$
 \log_b(n) = x \quad \text{if and only if} \quad b^x = n
-\]
+$$
 
 Where:
 - \( b \) is the **base** (often 2 in computer science).
@@ -17,15 +17,15 @@ Where:
 - \( x \) is the **number of times you must divide \( n \) by \( b \) to reach 1**.
 
 ### **Example: Logarithm in Base 2**
-\[
+$$
 log_2(8) = 3 \quad \text{because} \quad 2^3 = 8
-\]
-\[
+$$
+$$
 log_2(16) = 4 \quad \text{because} \quad 2^4 = 16
-\]
-\[
+$$
+$$
 \log_2(1024) = 10 \quad \text{because} \quad 2^{10} = 1024
-\]
+$$
 
 This tells us that if an algorithm **cuts the problem size in half** each step, it will finish in about \( \log_2(n) \) steps.
 
@@ -43,9 +43,10 @@ One of the most famous \( O(log n) \) algorithms is **binary search**, which fin
 5. Repeat until the element is found or the list is empty.
 
 ### **Log Calculation for Steps**:
-- A list of **size 8** requires at most **\( log_2(8) = 3 \) steps**.
-- A list of **size 16** requires at most **\( log_2(16) = 4 \) steps**.
-- A list of **size 1,000,000** requires only **\(log_2(1,000,000) \approx 20 \) steps**.
+- A list of **size 8** requires at most **$\log_2(8)$ = 3 steps**.
+- A list of **size 16** requires at most **$\log_2(16)$ = 4 steps**.
+- A list of **size 1,000,000** requires only **$\log_2(1,000,000) \approx 20$ steps**.
+
 
 #### **Python Implementation**
 ```python
@@ -66,7 +67,7 @@ def binary_search(arr, target):
 ---
 
 ## **Log Growth vs. Other Complexities**
-| \( n \) (Input Size) | \( log_2(n) \) (Steps in \( O(log n) \)) | \( O(n) \) (Linear Steps) |
+| \( n \) (Input Size) | $\log_2(n)$ (Steps in \( O(log n) \)) | \( O(n) \) (Linear Steps) |
 |----------------|----------------------|-------------------|
 | 8  | 3  | 8  |
 | 16 | 4  | 16 |
