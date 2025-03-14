@@ -47,5 +47,16 @@
 - **Sorting is critical for efficient searching!**
 
 ---
+
+## **3️⃣ Algorithm Complexity Growth Visualization**
+
+This chart illustrates the growth of different complexities (O(1), O(log n), O(n), O(n log n), O(n²), etc.).
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/MIT-Emerging-Talent/ET6-Recitations-6001x/main/session_09/complx.png" width="600">
+</p>
+
+---
+    
  **Next Steps:** Try modifying the exercises, changing input sizes, and analyzing performance!
 
