@@ -1,6 +1,6 @@
 # **Interactive Coding Exercises for Students**
 
-🔗 **Step 1: Explore Sorting Algorithms** *(Estimated Time: 10 minutes)*
+🔗 **Step 1: Explore Sorting Algorithms** *(Estimated Time: 15 minutes)*
 Before working on the exercises, go through the [VisuAlgo Sorting](https://visualgo.net/en/sorting?slide=1) link and:
 1. Explore the **Bubble Sort, Selection Sort, and Merge Sort** animations.
 2. Analyze their **pseudocode** and compare their working mechanisms.
@@ -20,7 +20,7 @@ def mystery_sort(arr):
         for j in range(i + 1, len(arr)):
             if arr[j] < arr[min_index]:
                 min_index = j
-        arr[i], arr[min_index] = arr[min_index], arr[i]  # 🚀 Fix: Swap elements to complete the sort
+        arr[i], arr[min_index] = arr[min_index], arr[i]  # Fix: Swap elements to complete the sort
     return arr
 
 arr = [7, 2, 5, 1, 8]
@@ -32,7 +32,7 @@ print(mystery_sort(arr))  # Expected output: [1, 2, 5, 7, 8]
 
 ---
 
-## **🔹 Exercise 2: Understanding Time Complexity** *(Estimated Time: 20 minutes)*
+## **🔹 Exercise 2: Understanding Time Complexity** *(Estimated Time: 15 minutes)*
 ### **Task 2: Compare Sorting Algorithm Complexities**
 The following sorting functions have different time complexities. Your task is to analyze them and determine their efficiency.
 
@@ -52,7 +52,7 @@ def sort_B(arr):
     right = sort_B(arr[mid:])
     return merge(left, right)
 
-# 🚀 Complete the merge function!
+# Complete the merge function!
 
 def merge(left, right):
     result = []
@@ -99,7 +99,7 @@ def optimized_bubble_sort(arr):
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
                 swapped = True
         if not swapped:
-            break  # 🚀 Optimization: Stop if the list is already sorted
+            break  # Optimization: Stop if the list is already sorted
     return arr
 
 arr = [4, 2, 7, 1, 9]
@@ -111,10 +111,4 @@ print(optimized_bubble_sort(arr))  # Expected: [1, 2, 4, 7, 9]
 
 ---
 
-### **Summary of Tasks:** *(Total Estimated Time: 60 minutes)*
-✅ Explore and test sorting algorithms in [VisuAlgo](https://visualgo.net/en/sorting?slide=1) *(10 minutes)*
-✅ Debugging and analyzing sorting algorithms. *(15 minutes)*
-✅ Understanding and comparing time complexities. *(20 minutes)*
-✅ Implementing and optimizing sorting algorithms. *(15 minutes)*
-
-These exercises will help you understand sorting algorithms at a deeper level! 🚀
+These exercises will help you understand sorting algorithms at a deeper level! 
