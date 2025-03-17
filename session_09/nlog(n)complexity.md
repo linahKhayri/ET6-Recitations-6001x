@@ -39,7 +39,7 @@ def bisect_search1(L, e):
 - **Explanation:**
   - This function **halves the search space** at each step (which suggests $O(log n) $).
   - However, **it slices the list (`L[:half]`, `L[half:]`) at each step**, which requires copying part of the list, leading to an **extra cost that sums to \( O(n) \) overall**.
-  - **Total complexity: $O(n log n) $ because of both slicing and recursive calls.**
+  - **Total complexity:** $O (n log n)$ because of both slicing and recursive calls.
   - ✅ **Important Note:** Slicing (`L[:half]`, `L[half:]`) creates a new list, making `bisect_search1` inefficient compared to using index-based binary search.
 
 ---
