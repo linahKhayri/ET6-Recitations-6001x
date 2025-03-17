@@ -8,7 +8,7 @@ This document compares four different functions in terms of **time complexity** 
 | **First Code (while loop, `n *= 2`)** | \( O(1) \) | Runs a **fixed number of iterations (5)**, so the complexity is constant regardless of `n`. |
 | **`iterPower(a, b)` (Iterative Exponentiation)** | \( O(b) \) | Uses a loop that runs **\( b \) times**, multiplying `result` by `a` in each step. |
 | **`recurPower(a, b)` (Recursive Exponentiation)** | \( O(b) \) | Calls itself recursively **\( b \) times**, multiplying `a` at each step. |
-| **`recurPowerNew(a, b)` (Exponentiation by Squaring)** | \( O(\log b) \) | **Efficient approach**, reducing `b` by **half** each step when `b` is even, significantly improving performance. |
+| **`recurPowerNew(a, b)` (Exponentiation by Squaring)** | \$O(log b)$ | **Efficient approach**, reducing `b` by **half** each step when `b` is even, significantly improving performance. |
 
 ---
 
@@ -68,7 +68,7 @@ def recurPowerNew(a, b):
    else:
       return a * recurPowerNew(a, b - 1)
 ```
-- **Complexity: \( O(\log b) \)**
+- **Complexity:** \$O(log b)$ 
 - **Explanation:**  
   - When `b` is **even**, the function **squares `a` and halves `b`**, reducing `b` much faster.
   - When `b` is **odd**, it follows the standard recursive exponentiation approach (`a * recurPowerNew(a, b-1)`).
@@ -79,6 +79,6 @@ def recurPowerNew(a, b):
 ## **Conclusion**
 1. **First code is the fastest \( O(1) \) because it runs a fixed number of times.**  
 2. **Both `iterPower` and `recurPower` are slow \( O(b) \) because they execute `b` multiplications.**  
-3. **`recurPowerNew` (Exponentiation by Squaring) is the most efficient \( O(\log b) \), reducing the number of steps significantly.**  
+3. **`recurPowerNew` (Exponentiation by Squaring) is the most efficient \$O(log b)$, reducing the number of steps significantly.**  
 
 **Use `recurPowerNew` for large exponents to improve performance!** 
