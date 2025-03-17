@@ -78,7 +78,7 @@ def bisect_search2(L, e):
 | Function | Time Complexity | Explanation |
 |----------|---------------|-------------|
 | **`search(L, e)` (Linear Search on Sorted List)** | \( O(n) \) | Iterates through the list, stopping early if `e` is found or a greater element is encountered. |
-| **`bisect_search1(L, e)` (Binary Search with Slicing)** | $O(n log n) $ | **Inefficient due to slicing**, which copies part of the list at each recursive call, increasing complexity. |
-| **`bisect_search2(L, e)` (Optimized Binary Search with Indices)** | $O(log n) $ | **Efficient binary search**, avoiding slicing by using indices to track the search space, achieving the optimal logarithmic complexity. |
+| **`bisect_search1(L, e)` (with Slicing)** | $O(n log n) $ | **Inefficient due to slicing**, which copies part of the list at each recursive call, increasing complexity. |
+| **`bisect_search2(L, e)` (Optimized bisection Search with Indices)** | $O(log n) $ | **Efficient binary search**, avoiding slicing by using indices to track the search space, achieving the optimal logarithmic complexity. |
 
  **Use `bisect_search2` for efficient searches!** 
