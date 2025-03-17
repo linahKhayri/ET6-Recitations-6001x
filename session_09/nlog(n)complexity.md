@@ -21,7 +21,7 @@ def search(L, e):
 
 ---
 
-### **2️⃣ `bisect_search1(L, e)` (Binary Search with Slicing - Inefficient)**
+### **2️⃣ `bisect_search1(L, e)` (With Slicing - Inefficient)**
 ```python
 def bisect_search1(L, e):
     if L == []:
@@ -44,7 +44,7 @@ def bisect_search1(L, e):
 
 ---
 
-### **3️⃣ `bisect_search2(L, e)` (Optimized Binary Search with Indices - Efficient)**
+### **3️⃣ `bisect_search2(L, e)` (Optimized bisection Search with Indices - Efficient)**
 ```python
 def bisect_search2(L, e):
     def bisect_search_helper(L, e, low, high):
