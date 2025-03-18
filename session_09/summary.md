@@ -46,6 +46,7 @@
 - **Binary Search is `O(log n)`, faster than Linear Search (`O(n)`).**
 - **Sorting is critical for efficient searching!**
 
+
 ---
 
 ## **3️⃣ Algorithm Complexity Growth Visualization**
