@@ -76,10 +76,10 @@ def __sub__(self, other):
   f1.__sub__(f2)
   ```
 - Computes fraction subtraction using:
-
-  $$
+  
+  ```math
   \frac{a}{b} - \frac{c}{d} = \frac{a \times d - c \times b}{b \times d}
-  $$
+
 
 ---
 
