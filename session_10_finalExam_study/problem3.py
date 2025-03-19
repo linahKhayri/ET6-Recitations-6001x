@@ -17,3 +17,13 @@
 # not be the same) ({'a':'d', 'b': 'c', 'd': 'a', 'c': 'b'}, 'adc')
 # Paste your entire function, including the definition, in the box below. 
 # Do not leave any debugging print statements.
+
+ def cipher(map_from, map_to, code):
+
+# Step 1: Create the mapping dictionary
+   
+
+# Step 2: Decode the message using the dictionary
+
+
+ # Step 3: Return the mapping dictionary and decoded message
