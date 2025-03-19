@@ -47,7 +47,7 @@ You need to implement a function that extracts and sums **all digits in a given 
 
 ---
 
-### ** Problem 3: Simple Cipher Mapping (10 minutes)**
+### **Problem 3: Simple Cipher Mapping (10 minutes)**
 
 #### **Scenario**
 You are given two strings that define a **substitution cipher mapping**. You need to implement a function that **creates a dictionary mapping** and uses it to decode a given coded message.
