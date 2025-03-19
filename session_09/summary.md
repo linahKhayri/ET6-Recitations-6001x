@@ -45,6 +45,7 @@
 - **Merge Sort is `O(n log n)`**, more efficient than Bubble/Selection Sort.
 - **Binary Search is `O(log n)`, faster than Linear Search (`O(n)`).**
 - **Sorting is critical for efficient searching!**
+- **Please fill out the feedback form: https://forms.gle/7jn1WyFdcfdtxm4b8**
 
 
 ---
