@@ -9,7 +9,7 @@ Each problem has a **specific time limit**, allowing you to practice coding effi
 
 ## **Session Breakdown**
 
-### ** Problem 1: MITCampus Tent Management (25 minutes)**
+### **Problem 1: MITCampus Tent Management (25 minutes)**
 
 #### **Scenario**
 You are designing a system for managing **tent locations** on an MIT campus. The campus has a **fixed center location**, and tents can be placed at different positions **if they meet certain conditions**.
