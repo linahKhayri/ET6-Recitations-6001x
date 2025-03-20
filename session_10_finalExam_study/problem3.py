@@ -21,9 +21,18 @@
  def cipher(map_from, map_to, code):
 
 # Step 1: Create the mapping dictionary
-   
-
+    key_code = {}
+    
+    for i in range(len(map_from)):
+        key_code[map_from[i]] = map_to[i]
+        
 # Step 2: Decode the message using the dictionary
+        
+    decoded = ""
+    
+    for char in code:
+        decoded += key_code[char]
+# Step 3: Return the mapping dictionary and decoded message      
+    return decoded, key_code
 
-
- # Step 3: Return the mapping dictionary and decoded message
+print(cipher("abcd", "dcba", "dab"))
