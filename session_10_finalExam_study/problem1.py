@@ -65,3 +65,52 @@
 # c.get_tents() should return ['<0,0>', '<1,2>', '<2,3>']
 
 # Paste your entire class MITCampus in the box below. Do not leave any debugging print statements.
+class MITCampus(Campus):
+#     """ A MITCampus is a Campus that contains tents """
+    def __init__(self, center_loc, tent_loc = Location(0,0)):
+#         """ Assumes center_loc and tent_loc are Location objects 
+#         Initializes a new Campus centered at location center_loc 
+#         with a tent at location tent_loc """
+#         # Your code here
+        super().__init__(center_loc)
+        self.tents=[tent_loc]
+        
+    def add_tent(self, new_tent_loc):
+    #         """ Assumes new_tent_loc is a Location
+    #         Adds new_tent_loc to the campus only if the tent is at least 0.5 distance 
+    #         away from all other tents already there. Campus is unchanged otherwise.
+    #         Returns True if it could add the tent, False otherwise. """
+              for tent in self.tents:
+                  if new_tent_loc.dist_from(tent) <0.5:
+                      return False
+              self.tents.append(new_tent_loc)
+              return True
+    def remove_tent(self, tent_loc):
+    #         """ Assumes tent_loc is a Location
+    #         Removes tent_loc from the campus. 
+    #         Raises a ValueError if there is not a tent at tent_loc.
+    #         Does not return anything """
+    #         # Your code here
+              if tent_loc not in self.tents:
+                  raise ValueError ("Tent Loacation Not Found")
+              self.tents.remove(tent_loc)
+
+    def get_tents(self):
+    #         """ Returns a list of all tents on the campus. The list should contain 
+    #         the string representation of the Location of a tent. The list should 
+    #         be sorted by the x coordinate of the location. """
+    #         # Your code here
+              tents=[]
+              for tent in self.tents:
+                  tents.append(str(tent))
+            
+              tents.sort()
+              return tents 
+        
+c= MITCampus(Location(1, 2))
+c.add_tent(Location(2, 3))
+c.add_tent(Location(8, 0))
+c.add_tent(Location(8, 0))
+c.get_tents()
+c.remove_tent(Location(1, 3))
+c.get_tents()
