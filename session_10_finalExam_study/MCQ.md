@@ -30,6 +30,12 @@ def f(n):
     for i in range(n):
         g(n)
 ```
+
+- [ ] O(n²)
+- [ ] O(n log n)
+- [x] O(n)
+- [ ] O(1)
+
 ## Problem 3
 The complexity of `1^n + n^4 + 4n + 4` is:
 
