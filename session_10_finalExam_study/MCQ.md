@@ -12,10 +12,15 @@ class B(A):
 ```
 Which of the following is correct?
 
-- [x] When `a = A()` we say that `a` is an instance of `A`.
+- [ ] When `a = A()` we say that `a` is an instance of `A`.
 - [ ] When `b = B()` we say that `b` is a subclass of `A`.
 - [ ] Both of the above.
 - [ ] Neither of the above.
+
+<details>
+  <summary>Show Answer</summary>
+  ✅ When `a = A()` we say that `a` is an instance of `A`.
+</details>
 
 ---
 
@@ -33,8 +38,15 @@ def f(n):
 
 - [ ] O(n²)
 - [ ] O(n log n)
-- [x] O(n)
+- [ ] O(n)
 - [ ] O(1)
+
+<details>
+  <summary>Show Answer</summary>
+  ✅ O(n)
+</details>
+
+---
 
 ## Problem 3
 The complexity of `1^n + n^4 + 4n + 4` is:
@@ -42,5 +54,10 @@ The complexity of `1^n + n^4 + 4n + 4` is:
 - [ ] Constant
 - [ ] Logarithmic
 - [ ] Linear
-- [x] Polynomial
+- [ ] Polynomial
 - [ ] Exponential
+
+<details>
+  <summary>Show Answer</summary>
+  ✅ Polynomial
+</details>
